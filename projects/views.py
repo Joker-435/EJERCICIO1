@@ -16,3 +16,11 @@ def registro(request):
         user.fecha_expedicion = fecha_expedicion
         user.save()
     return render(request, 'Registro.html')
+def Home(request):
+    return render(request, 'home.html' )
+def Pago(request):
+    return render(request,'formulario_de_pago.html')
+def IniciarSesion(request):
+    return render(request, 'IniciarSesion.html')
+def TyC(request):
+    return render(request, 'TerminosYCondiciones.html')
