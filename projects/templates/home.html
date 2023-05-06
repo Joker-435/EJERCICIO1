@@ -77,12 +77,14 @@
             margin: 0;
             margin-bottom: 20px;
             font-family: P5;
+            color: #000000;
         }
 
         .main-image p {
             font-size: 24px;
             margin: 0;
             font-family: P5;
+            color: #000000;
         }
         @font-face {
             font-family: P5;
@@ -106,7 +108,16 @@
             margin-right: 0;
             margin-left: 0;
         }
-
+        .content-container {
+            background-color: #F0F0F0;
+            border-radius: 10px;
+            padding: 20px;
+            width: 1200px;
+            height: 300px;
+            position: relative;
+            left: 17%;
+            top: 17%;
+          }
         
     </style>
 </head>
@@ -117,7 +128,9 @@
             <!-- Puedes poner tus imágenes de la cabecera aquí -->
             <img src="Arsene.jpg" alt="Logo 1">
             <img src="showtime1.jpg" alt="Logo 2 " id="logo2">
-            <img src="cabecera.jpg" alt="Logo 4" id="logo4">
+            <audio controls autoplay  style="width: 250px;">
+                <source src="https://24483.live.streamtheworld.com/RADIO_ACTIVA.mp3" type="audio/mpeg">
+              </audio>
             <img src="mascaras.jpg" alt="Logo 3" id="logo3">
         </div>
         <div class="btns">
@@ -126,12 +139,13 @@
         </div>
     </div>
     <div class="main-image">
-        <div class="content">
+        <div class="content-container">
+          <div class="content">
             <h1>¡PARTICIPA AHORA Y EMPIEZA A GANAR APOSTANDO A TU EQUIPO FAVORITO!</h1>
-            <p>Aplican términos, restricciones y condiciones. Autoriza Coljuegos
-            </p>
+            <p>Aplican términos, restricciones y condiciones. Autoriza Coljuegos</p>
+          </div>
         </div>
-    </div>
+      </div>
 </body>
 
 </html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mi página</title>
+    <style>
+      body {
+        background-color: black;
+      }
+		.main .profile{
+			overflow-x: hidden;
+			overflow-y: hidden;
+			float: left;
+			clear: right;
+			height: 40px;
+			width: 100px;
+		}
+      
+      .sidebar {
+	  	border-right: thin solid #FF0000;
+    	padding-right: 0px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 8%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+      
+      .sidebar img {
+        width: 70%;
+      }
+      
+      .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        margin-left: 5%;
+      }
+      
+      .main img:first-child {
+        width: 30%;
+        height: 40%;
+        margin-bottom: 2%;
+      }
+      
+      .main img:last-child {
+        width: 30%;
+        height: 15%;
+        margin-bottom: 2%;
+      }
+      
+      .main h1 {
+        color: white;
+        font-size: 2em;
+        margin-bottom: 2%;
+      }
+      
+      .main ul {
+        color: white;
+        font-size: 1.5em;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .main ul li {
+        margin-bottom: 1%;
+      }
+      
+      .main h2 {
+        color: red;
+        font-size: 2em;
+        margin-bottom: 1%;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div class="sidebar">
+      <img src="Images/Menu.png">
+      <img src="Images/Perfil.png">
+      <img src="Images/Competencias.png">
+      <img src="Images/Logros.png">
+      <img src="Images/Fondos.png">
+      <img src="Images/Logout.png">
+    </div>
+    
+    <div class="main">
+      <img class="profile" src="Images/Profile.png">
+      <img src="Images/Gato.png">
+      <h1>Hi, this is me</h1>
+      <div class="info">
+        <div>
+          <h2>Información personal</h2>
+          <ul>
+            <li>Nombre</li>
+            <li>Apellido</li>
+            <li>Edad</li>
+            <li>Género</li>
+            <li>Nacionalidad</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contacto</h2>
+          <ul>
+            <li>Correo electrónico</li>
+            <li>Número de teléfono</li>
+            <li>Celular</li>
+            <li>Contacto de correo</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Dirección</h2>
+          <ul>
+            <li>Dirección de casa</li>
+            <li>Departamento de residencia</li>
+            <li>Ciudad</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Información financiera</h2>
+          <ul>
+            <li>Banco afiliado</li>
+            <li>Número de cuenta</li>
+            <li>Dinero de cuenta</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
