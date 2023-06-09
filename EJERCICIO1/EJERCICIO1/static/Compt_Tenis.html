@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Competencias Tenis</title>
+<link href="style3.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="cuerpo">
+<header class="panel">
+	  <a href="home.html">
+	  	<img class="img_bar" src="Images/Menu.png">
+	  </a>
+	  <a href="perfil-1.html">
+	  	<img class="img_bar" src="Images/Perfil.png">
+	  </a>
+	  <a href="Competencias.html">
+	  	<img class="img_bar" src="Images/Competencias.png">
+	  </a>
+      <a href="javascript:void(0);" onClick="abrirVentanaEmergente()">
+	  	<img class="img_bar" src="Images/Logros.png">
+	  </a>
+      <img class="img_bar" src="Images/Fondos.png">
+      <img class="img_bar" src="Images/Logout.png">
+	  
+	  <script>
+		function abrirVentanaEmergente() {
+		  var ventanaWidth = 400; // Ancho de la ventana emergente
+		  var ventanaHeight = 300; // Altura de la ventana emergente
+		  var left = (screen.width - ventanaWidth) / 2; // Coordenada X para centrar la ventana
+		  var top = (screen.height - ventanaHeight) / 2; // Coordenada Y para centrar la ventana
+
+		  var ventanaEmergente = window.open("", "Ventana Emergente", "width=" + ventanaWidth + ",height=" + ventanaHeight + ",left=" + left + ",top=" + top);
+
+
+		  ventanaEmergente.document.write(`
+			<html>
+			<head>
+			  <title>Algo se está preparando</title>
+			</head>
+			<body>
+			  <h2>Esta función estará proximamente disponible</h2>
+			  <p>ArsenLupin.</p>
+			  <button onclick="window.close()">Aceptar</button>
+			</body>
+			</html>
+		  `);
+		}
+	</script>
+  </header>
+  <main class="Contenido"> <br>
+<article class="Titulo">
+  <img class="img1" src="Images/Tennis-PNG-Download-Image.png" width="120" height="121" alt=""/>
+  <h1 class="Title_Fut"> Tenis</h1>
+</article>
+<article class="UCL"><img src="Images/Australian_Open.jpg" width="100%" height="100%" alt=""/>
+</article>
+    <article class="CCL">
+      <img src="Images/ATP.png" width="100%" height="100%" alt=""/>
+    </article>
+    <article class="FPC">
+      <img src="Images/roland-garros-paris-tennis.jpg" width="100%" height="100%" alt=""/>
+  &nbsp;</article>
+</main>
+<footer class="piedepagina">Todos los derechos reservados Arsene Lupin Book Marker's © 2023</footer>
+</div>
+</body>
+</html>

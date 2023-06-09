@@ -32,3 +32,15 @@ def Futbol(request):
     return render(request, 'Compt_Futbol.html')
 def Perfil(request):
     return render(request, 'perfil-1.html')
+def Tarjeta(request):
+
+    css_file = './templates/main.css'
+    js_file = './templates/main.js'
+
+    # Contexto de la plantilla con las rutas de los archivos CSS y JS
+    context = {
+        'css_file': css_file,
+        'js_file': js_file
+    }
+    return render(request, 'pago.html' , context=context)
+    

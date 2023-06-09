@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registro de usuario</title>
+    <style>
+        body {
+            background-image: url("fondo3.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+        }
+        
+        .container {
+            margin: auto;
+            padding: 10px;
+            background-color: black;
+            width: 80%;
+            height: 85%;
+            text-align: center;
+            box-sizing: border-box;
+            color: white;
+            border-radius: 10px;
+            margin-top: 150px;
+        }
+        
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px 0;
+            padding: 10px;
+            justify-content: space-between;
+        }
+        
+        .col {
+            flex: 1;
+            margin: 0 10px;
+            box-sizing: border-box;
+            font-family: P5;
+            font-weight: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+            font-family: P5;
+        }
+        
+        input {
+            width: 100%;
+            padding: 5px;
+            border-radius: 3px;
+            border: none;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            background-color: red;
+            color: white;
+            font-family: P5;
+        }
+        
+        select {
+            width: 100%;
+            padding: 5px;
+            border-radius: 3px;
+            border: none;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            background-color: red;
+            color: white;
+            font-family: P5;
+            font-weight: 20px;
+        }
+        
+        .btn {
+            padding: 10px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0px;
+            box-sizing: border-box;
+            margin-bottom: 40px;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 5px;
+            font-family: P5;
+            width: 225px;
+            height: 75px;
+            position: relative;
+            top: -125px;
+        }
+        
+        .btn-small {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 5px;
+            margin-top: 20px;
+            background-color: red;
+            color: white;
+            font-family: P5;
+            width: 225px;
+            height: 75px;
+            position: relative;
+            top: -20px;
+        }
+        
+        .checkbox {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 5px;
+            margin-right: 10px;
+            color: white;
+            text-align: left;
+        }
+        
+        .checkbox input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        
+        .imagen {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 10%;
+            height: 5%;
+            object-fit: cover;
+            margin-top: 100px;
+            margin-left: 200px;
+        }
+        
+        @font-face {
+            font-family: P5;
+            src: url(optima-nova-lt-black.otf);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="Registro.png" alt="Imagen encima del contenedor negro" class="imagen">
+        <div class="row">
+            <div class="col">
+                <label>Primer nombre</label>
+                <input type="text" name="primer_nombre">
+            </div>
+            <div class="col">
+                <label>Segundo nombre</label>
+                <input type="text" name="segundo_nombre">
+            </div>
+            <div class="col">
+                <label>Primer apellido</label>
+                <input type="text" name="primer_apellido">
+            </div>
+            <div class="col">
+                <label>Segundo apellido</label>
+                <input type="text" name="segundo_apellido">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label>Tipo de documento</label>
+                <select name="tipo_documento">
+					<option value="cedula">Cédula</option>
+					<option value="pasaporte">Pasaporte</option>
+					<option value="otro">Otro</option>
+				</select>
+            </div>
+            <div class="col">
+                <label>Número de documento</label>
+                <input type="text" name="numero_documento">
+            </div>
+            <div class="col">
+                <label>Fecha de expedición</label>
+                <input type="date" name="fecha_expedicion">
+            </div>
+            <div class="col">
+                <label>Teléfono móvil</label>
+                <input type="text" name="telefono_movil">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label>Nacionalidad</label>
+                <input type="text" name="nacionalidad">
+            </div>
+            <div class="col">
+                <label>Departamento de residencia</label>
+                <input type="text" name="departamento_residencia">
+            </div>
+            <div class="col">
+                <label>Ciudad de residencia</label>
+                <input type="text" name="ciudad_residencia">
+            </div>
+            <div class="col">
+                <label>Dirección</label>
+                <input type="text" name="direccion">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label>Correo electrónico</label>
+                <input type="email" name="correo_electronico">
+            </div>
+            <div class="col">
+                <label>Confirmar correo electrónico</label>
+                <input type="email" name="confirmar_correo_electronico">
+            </div>
+            <div class="col">
+                <label>Contraseña</label>
+                <input type="password" name="contrasena">
+            </div>
+            <div class="col">
+                <label>Confirmar contraseña</label>
+                <input type="password" name="confirmar_contrasena">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label>Género</label>
+                <select name="genero">
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                    </select>
+            </div>
+            <div class="col">
+                <label>Código referido</label>
+                <input type="text" name="codigo_referido">
+            </div>
+            <div class="col">
+				<a href="formulario_de_pago.html">
+					<button class="btn-small">Agregar Cartera de Pago</button>
+				</a>
+                
+            </div>
+            <div class="col">
+
+                <div class="checkbox">
+                    <input type="checkbox" name="acepto_notificaciones" id="acepto_notificaciones">
+                    <label for="acepto_notificaciones">Acepto recibir notificaciones por mi correo electrónico</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="acepto_terminos" id="acepto_terminos">
+                    <label for="acepto_terminos">Acepto todos los terminos y condiciones del contrato del sitio</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="btn">Registrarse</button>
+            </div>
+        </div>
+    </div>
+	</body>
+</html>

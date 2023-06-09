@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Payment form</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+         :root {
+            --small-mobile-font-size: 20px;
+            --large-mobile-font-size: 22px;
+            --desktop-font-size: 18px;
+        }
+        
+        body {
+            background-image: url('../static/css/joker.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            font-family: P5;
+            font-weight: 500;
+            margin: 20px 10px 0 20px;
+        }
+        
+        button {
+            background-color: black;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            color: #eee;
+            cursor: pointer;
+            display: block;
+            font-size: 20px;
+            /* fallback */
+            font-size: var(--large-mobile-font-size);
+            font-weight: 400;
+            margin: 3px 0 0 0;
+            padding: 14px;
+        }
+        
+        button:disabled {
+            color: #888;
+            cursor: default;
+        }
+        
+        button:not(:disabled):hover {
+            background-color: #333;
+            color: white;
+        }
+        
+        div.explanation {
+            font-size: 14px;
+            margin: 10px 0 0 0;
+        }
+        
+        section#cc-exp-csc div:not(:last-child) {
+            margin: 0 10px 0 0;
+        }
+        
+        div#exp-month-year {
+            width: 50%;
+        }
+        
+        form {
+            border-bottom: 1px solid #ccc;
+            margin: 0 0 20px 0;
+            padding: 0 0 20px 0;
+        }
+        
+        h1 {
+            border-bottom: 1px solid #ccc;
+            font-size: 28px;
+            font-weight: 300;
+            margin: 0 0 30px 0;
+            padding: 0 0 10px 0;
+        }
+        
+        input {
+            border: 1px solid #ccc;
+            font-size: 22px;
+            /* fallback */
+            font-size: var(--large-mobile-font-size);
+            padding: 15px;
+            width: 90%;
+            /* fallback */
+            width: calc(100% - 30px);
+            /* full width minus padding */
+        }
+        
+        input:not(:focus):invalid {
+            color: red;
+            outline-color: red;
+        }
+        
+        label {
+            display: block;
+            font-size: 20px;
+            font-size: var(--large-mobile-font-size);
+            font-weight: 400;
+            margin: 0 0 8px 0;
+        }
+        
+        main {
+            margin: 0 auto;
+            max-width: 500px;
+        }
+        
+        p {
+            font-size: 19px;
+            font-weight: 400;
+        }
+        
+        form section {
+            margin: 0 0 15px 0;
+            position: relative;
+        }
+        
+        form section:last-of-type {
+            margin: 0 0 25px 0;
+        }
+        
+        section#cc-exp-csc {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        select {
+            background-color: white;
+            border: 1px solid #ccc;
+            display: inline-block;
+            font-size: var(--mobile-font-size);
+            padding: 15px 15px 15px 11px;
+            width: 45%;
+        }
+        
+        @media (min-width: 400px) {
+            body {
+                margin: 40px 20px 0 40px;
+            }
+            button {
+                font-size: 20px;
+                /* fallback */
+                font-size: var(--large-mobile-font-size);
+            }
+            div.explanation {
+                font-size: 16px;
+            }
+            h1 {
+                font-size: 36px;
+                font-weight: 500;
+                margin: 0 0 40px 0;
+            }
+            input {
+                font-size: 22px;
+                /* fallback */
+                font-size: var(--large-mobile-font-size);
+            }
+            label {
+                font-size: 22px;
+                /* fallback */
+                font-size: var(--large-mobile-font-size);
+                margin: 0 0 10px 0;
+            }
+            p {
+                font-weight: 100;
+                line-height: 1.5em;
+            }
+            form section {
+                margin: 0 0 40px 0;
+            }
+            form section:last-of-type {
+                margin: 0 0 20px 0;
+            }
+        }
+        
+        @media (min-width: 500px) {
+            body {
+                margin: 20px 70px 0 70px;
+            }
+            button {
+                font-size: 18px;
+                /* fallback */
+                font-size: var(--desktop-font-size);
+            }
+            section#cc-exp-csc div:not(:last-child) {
+                margin: 0 20px 0 0;
+            }
+            form {
+                margin: 0 0 20px 0;
+                padding: 0 0 20px 0;
+            }
+            h1 {
+                font-size: 36px;
+                font-weight: 100;
+            }
+            input {
+                font-size: 18px;
+                /* fallback */
+                font-size: var(--desktop-font-size);
+            }
+            label {
+                font-size: 18px;
+                /* fallback */
+                font-size: var(--desktop-font-size);
+                margin: 0 0 10px 0;
+            }
+            form section {
+                margin: 0 0 35px 0;
+            }
+            @font-face {
+                font-family: P5;
+                src: url('../static/css/optima-nova-lt-black.otf');
+            }
+        }
+    </style>
+    <script>
+        /*
+                Copyright 2020 Google LLC
+                Licensed under the Apache License, Version 2.0 (the "License");
+                you may not use this file except in compliance with the License.
+                You may obtain a copy of the License at
+                  https://www.apache.org/licenses/LICENSE-2.0
+                Unless required by applicable law or agreed to in writing, software
+                distributed under the License is distributed on an "AS IS" BASIS,
+                WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+                See the License for the specific language governing permissions and
+                limitations under the License.
+                */
+
+        const form = document.querySelector('form');
+        const completePaymentButton = document.querySelector('button#complete-payment');
+
+        form.addEventListener('submit', handleFormSubmission);
+
+        function handleFormSubmission(event) {
+            event.preventDefault();
+            validate();
+            form.reportValidity();
+            if (form.checkValidity() === false) {
+                // Handle invalid form data.
+            } else {
+                // On a production site do form submission.
+                completePaymentButton.textContent = 'Making payment...';
+                completePaymentButton.disabled = 'true';
+                alert('Made payment!');
+                completePaymentButton.textContent = 'Payment complete!';
+            }
+        }
+
+        // Do form validation.
+        function validate() {
+            // let message= '';
+            // if (!/someregex/.test(someInput.value)) {
+            //   console.log(`Invalid value ${someInput.value} for someInput`);
+            // 	 message = 'Explain how to enter a valid value';
+            // }
+            // someInput.setCustomValidity(message);
+        }
+    </script>
+</head>
+
+<body>
+
+    <main>
+
+        <form action="#" method="post">
+
+            <h1>Formulario de Pago con Tarjeta</h1>
+
+            <section>
+                <label for="cc-number">Numero de Tarjeta</label>
+                <!-- Allow for spaces and for shorter and longer payment card numbers -->
+                <input id="cc-number" name="cc-number" autocomplete="cc-number" inputmode="numeric" maxlength="50" pattern="[\d ]{10,30}" required>
+            </section>
+
+            <section>
+                <label for="cc-name">Nombre del Titular</label>
+                <input id="cc-name" name="cc-name" autocomplete="cc-name" maxlength="50" pattern="[\p{L} \-\.]+" required>
+            </section>
+
+            <section id="cc-exp-csc">
+                <div>
+                    <label for="cc-exp">Fecha de expiracion</label>
+                    <input id="cc-exp" name="cc-exp" autocomplete="cc-exp" placeholder="MM/YY" maxlength="5" required>
+                </div>
+                <div>
+                    <label for="cc-csc">Codigo de Seguridad</label>
+                    <input id="cc-csc" name="cc-csc" inputmode="numeric" maxlength="3" required>
+                    <div class="explanation">Ultimos 3 digitos en la parte de atras de la tarjeta</div>
+                </div>
+            </section>
+
+            <!-- Alternative using select elements for expiry month and year 🤷🏻‍♂️ -->
+            <!-- 
+        <section id="cc-exp-csc">
+          <div id="exp-month-year">
+            <label for="cc-exp-month">Expiry date</label>
+            <select id="cc-exp-month" name="cc-exp-month" autocomplete="cc-exp-month" placeholder="MM">
+              <option value="">MM</option>
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+              <option value="05">05</option>
+              <option value="06">06</option>
+              <option value="07">07</option>
+              <option value="08">08</option>
+              <option value="09">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+            <select id="cc-exp-year" name="cc-exp-year" autocomplete="cc-exp-year" placeholder="YY">
+              <option value="">YY</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+            </select>
+          </div>
+          <div>
+            <label for="cc-csc">Security code</label>
+            <input id="cc-csc" name="cc-csc" autocomplete="cc-csc" inputmode="numeric" maxlength="3" required>
+            <div class="explanation">Back of card, last 3 digits</div>
+          </div>
+        </section>
+        -->
+
+            <button id="complete-payment">Concretar Pago</button>
+
+            <p>Ninguno de los datos aqui puestos seran guardados</p>
+
+        </form>
+
+        <p>Mas Informacion en: <a href="https://www.minhacienda.gov.co/webcenter/ShowProperty?nodeId=%2FConexionContent%2FWCC_CLUSTER-120994%2F%2FidcPrimaryFile&revision=latestreleased">Normativa&nbsp;Nacional&nbsp;para&nbsp;pagos&nbsp;con&nbsp;tarjeta</a></p>
+
+    </main>
+
+</body>
+
+</html>

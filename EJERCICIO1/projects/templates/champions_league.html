@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Competencias | UEFA Champions League</title>
+    <link href='../static/css/style_UCL.css' rel="stylesheet" type="text/css">
+</head>
+<style>
+    body {
+        background-image: url('../static/css/328-3286624_uefa-champions-league-2020-final.jpg');
+        background-size: cover;
+        background-position: center;
+        color: #FFFFFF;
+    }
+</style>
+
+<body>
+    <div class="cuerpo">
+        <header class="panel">
+            <!--<div class="Menu"><img src="Images/Menu.png" width="90" height="89" alt=""/></div>
+    <div class="Perfil"><img src="Images/Perfil.png" width="97" height="98" alt=""/></div>
+    <div class="Competencias"><img src="Images/Competencias.png" width="97" height="98" alt=""/></div>
+    <div class="Logros"><img src="Images/Logros.png" width="97" height="87" alt=""/></div>
+    <div class="Fondos"><img src="Images/Fondos.png" width="97" height="96" alt=""/></div>
+    <div class="Logout"><img src="Images/Logout.png" width="97" height="100" alt=""/></div> -->
+            <a href="home.html">
+                <img class="img_bar" src='../static/css/Menu.png'>
+            </a>
+            <a href="perfil-1.html">
+                <img class="img_bar" src='../static/css/Perfil.png'>
+            </a>
+            <a href="Competencias.html">
+                <img class="img_bar" src='../static/css/Competencias.png'>
+            </a>
+            <a href="javascript:void(0);" onClick="abrirVentanaEmergente()">
+                <img class="img_bar" src='../static/css/Logros.png'>
+            </a>
+            <img class="img_bar" src='../static/css/Fondos.png'>
+            <img class="img_bar" src='../static/css/Logout.png'>
+
+            <script>
+                function abrirVentanaEmergente() {
+                    var ventanaWidth = 400; // Ancho de la ventana emergente
+                    var ventanaHeight = 300; // Altura de la ventana emergente
+                    var left = (screen.width - ventanaWidth) / 2; // Coordenada X para centrar la ventana
+                    var top = (screen.height - ventanaHeight) / 2; // Coordenada Y para centrar la ventana
+
+                    var ventanaEmergente = window.open("", "Ventana Emergente", "width=" + ventanaWidth + ",height=" + ventanaHeight + ",left=" + left + ",top=" + top);
+
+
+                    ventanaEmergente.document.write(`
+			<html>
+			<head>
+			  <title>Algo se está preparando</title>
+			</head>
+			<body>
+			  <h2>Esta función estará proximamente disponible</h2>
+			  <p>ArsenLupin.</p>
+			  <button onclick="window.close()">Aceptar</button>
+			</body>
+			</html>
+		  `);
+                }
+            </script>
+        </header>
+        <main class="Contenido"><br>
+            <article class="Titulo">
+                <img class="img1" src='../static/css/champions-league-logo-png-transparent-logo-champions-league.png' width="120" height="51" alt="" />
+                <h1 class="Title_Fut"> UEFA Champions League</h1><br>
+                <h2 class="subt">Sábado 10 de junio</h2>
+            </article>
+            <div class="contenedor">
+                <div class="card">
+                    <div class="card-encabezado">
+                        <div class="datos">
+                            <span class="instancia">Final</span><br>
+                            <span class="FechaHora">14:00</span>
+                        </div>
+                        <img src='../static/css/man_city.png' alt="">
+                        <span class="vs">vs</span>
+                        <img src='../static/css/inter_milan.png' alt="">
+                    </div>
+                    <div class="card-contenido">
+                        <div class="info-personal desplazar">Manchester City&emsp;&emsp;Empate&emsp;&emsp;Inter de Milán</div>
+                        <div class="info-personal desplazar">1.51&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;5&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;7.14</div>
+                    </div>
+                    <div class="card-acciones">
+                        <button class="botones agrandar">Apostar</button>
+                        <button class="botones agrandar">Apostar</button>
+                        <button class="botones agrandar">Apostar</button>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer class="piedepagina">Todos los derechos reservados Arsene Lupin Book Marker's © 2023</footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mi página</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        
+        .main .profile {
+            overflow-x: hidden;
+            overflow-y: hidden;
+            float: left;
+            clear: right;
+            height: 40px;
+            width: 100px;
+        }
+        
+        .sidebar {
+            border-right: thin solid #FF0000;
+            padding-right: 0px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 8%;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .sidebar img {
+            width: 70%;
+        }
+        
+        .main {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            margin-left: 5%;
+        }
+        
+        .main img:first-child {
+            width: 30%;
+            height: 40%;
+            margin-bottom: 2%;
+        }
+        
+        .main img:last-child {
+            width: 30%;
+            height: 15%;
+            margin-bottom: 2%;
+        }
+        
+        .main h1 {
+            color: white;
+            font-size: 2em;
+            margin-bottom: 2%;
+        }
+        
+        .main ul {
+            color: white;
+            font-size: 1.5em;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main ul li {
+            margin-bottom: 1%;
+        }
+        
+        .main h2 {
+            color: red;
+            font-size: 2em;
+            margin-bottom: 1%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <header class="panel">
+            <!--<div class="Menu"><img src="Images/Menu.png" width="90" height="89" alt=""/></div>
+    <div class="Perfil"><img src="Images/Perfil.png" width="97" height="98" alt=""/></div>
+    <div class="Competencias"><img src="Images/Competencias.png" width="97" height="98" alt=""/></div>
+    <div class="Logros"><img src="Images/Logros.png" width="97" height="87" alt=""/></div>
+    <div class="Fondos"><img src="Images/Fondos.png" width="97" height="96" alt=""/></div>
+    <div class="Logout"><img src="Images/Logout.png" width="97" height="100" alt=""/></div> -->
+            <a href="home.html">
+                <img class="img_bar" src='../static/css//Menu.png'>
+            </a>
+            <a href="perfil-1.html">
+                <img class="img_bar" src='../static/css//Perfil.png'>
+            </a>
+            <a href="Competencias.html">
+                <img class="img_bar" src='../static/css/Competencias.png'>
+            </a>
+            <a href="javascript:void(0);" onClick="abrirVentanaEmergente()">
+                <img class="img_bar" src='../static/css/Logros.png'>
+            </a>
+            <img class="img_bar" src='../static/css/Fondos.png'>
+            <img class="img_bar" src='../static/css/Logout.png'>
+
+            <script>
+                function abrirVentanaEmergente() {
+                    var ventanaWidth = 400; // Ancho de la ventana emergente
+                    var ventanaHeight = 300; // Altura de la ventana emergente
+                    var left = (screen.width - ventanaWidth) / 2; // Coordenada X para centrar la ventana
+                    var top = (screen.height - ventanaHeight) / 2; // Coordenada Y para centrar la ventana
+
+                    var ventanaEmergente = window.open("", "Ventana Emergente", "width=" + ventanaWidth + ",height=" + ventanaHeight + ",left=" + left + ",top=" + top);
+
+
+                    ventanaEmergente.document.write(`
+			<html>
+			<head>
+			  <title>Algo se está preparando</title>
+			</head>
+			<body>
+			  <h2>Esta función estará proximamente disponible</h2>
+			  <p>ArsenLupin.</p>
+			  <button onclick="window.close()">Aceptar</button>
+			</body>
+			</html>
+		  `);
+                }
+            </script>
+        </header>
+    </div>
+
+    <div class="main">
+        <img class="profile" src='../static/css/Profile.png'>
+        <img src='../static/css/Gato.png'>
+        <h1>Hi, this is me</h1>
+        <div class="info">
+            <div>
+                <h2>Información personal</h2>
+                <ul>
+                    <li>Nombre</li>
+                    <li>Apellido</li>
+                    <li>Edad</li>
+                    <li>Género</li>
+                    <li>Nacionalidad</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Contacto</h2>
+                <ul>
+                    <li>Correo electrónico</li>
+                    <li>Número de teléfono</li>
+                    <li>Celular</li>
+                    <li>Contacto de correo</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Dirección</h2>
+                <ul>
+                    <li>Dirección de casa</li>
+                    <li>Departamento de residencia</li>
+                    <li>Ciudad</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Información financiera</h2>
+                <ul>
+                    <li>Banco afiliado</li>
+                    <li>Número de cuenta</li>
+                    <li>Dinero de cuenta</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

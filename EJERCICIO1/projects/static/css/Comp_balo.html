@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Comp_Futbol</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="cuerpo">
+  <header class="panel">
+
+	  <a href="home.html">
+	  	<div class="Menu"><img src="Images/Menu.png" width="90" height="89" alt=""/></div>
+	  </a>
+	  <a href="perfil-1.html">
+	  	<div class="Perfil"><img src="Images/Perfil.png" width="97" height="98" alt=""/></div>
+	  </a>
+	  <a href="Competencias.html">
+	  	<div class="Competencias"><img src="Images/Competencias.png" width="97" height="98" alt=""/></div>
+	  </a>
+      <a href="javascript:void(0);" onClick="abrirVentanaEmergente()">
+	  	<div class="Logros"><img src="Images/Logros.png" width="97" height="87" alt=""/></div>
+	  </a>
+      <div class="Fondos"><img src="Images/Fondos.png" width="97" height="96" alt=""/></div>
+      <div class="Logout"><img src="Images/Logout.png" width="97" height="100" alt=""/></div>
+	  
+	  <script>
+		function abrirVentanaEmergente() {
+		  var ventanaWidth = 400; // Ancho de la ventana emergente
+		  var ventanaHeight = 300; // Altura de la ventana emergente
+		  var left = (screen.width - ventanaWidth) / 2; // Coordenada X para centrar la ventana
+		  var top = (screen.height - ventanaHeight) / 2; // Coordenada Y para centrar la ventana
+
+		  var ventanaEmergente = window.open("", "Ventana Emergente", "width=" + ventanaWidth + ",height=" + ventanaHeight + ",left=" + left + ",top=" + top);
+
+
+		  ventanaEmergente.document.write(`
+			<html>
+			<head>
+			  <title>Algo se está preparando</title>
+			</head>
+			<body>
+			  <h2>Esta función estará proximamente disponible</h2>
+			  <p>ArsenLupin.</p>
+			  <button onclick="window.close()">Aceptar</button>
+			</body>
+			</html>
+		  `);
+		}
+	</script>
+  </header>
+  <main class="Contenido"> <br>
+<article class="Titulo">
+  <img class="img1" src="Images/ball.png" width="100" height="121" alt=""/>
+  <h1 class="Title_Fut"> Basketball</h1>
+</article>
+<article class="UCL"><img src="Images/nba.jpg" width="400" height="267" alt=""/>
+</article>
+<article class="CCL">
+      <img src="Images/aba.png" width="400" height="267" alt=""/>
+    </article>
+    <article class="FPC">
+      <img src="Images/lpb.png" width="400" height="267" alt=""/>
+  &nbsp;</article>
+</main>
+<footer class="piedepagina">Todos los derechos reservados Arsene Lupin Book Marker's © 2023</footer>
+</div>
+</body>
+</html>
