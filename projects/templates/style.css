@@ -22,8 +22,6 @@ body {
     padding-right: 0px;
 }
 
-
-
 .cuerpo .panel .Menu {
     width: 100%;
     background-color: #000000;
@@ -40,6 +38,7 @@ body {
     margin-bottom: 40px;
     margin-top: 25px;
 }
+
 .cuerpo .panel .Competencias {
     width: 100%;
     float: left;
@@ -60,6 +59,7 @@ body {
     margin-bottom: 40px;
     margin-left: 0px;
 }
+
 .cuerpo .panel .Fondos {
     width: 100%;
     float: left;
@@ -69,6 +69,7 @@ body {
     margin-top: 25px;
     margin-bottom: 40px;
 }
+
 .cuerpo .panel .Logout {
     width: 100%;
     float: left;
@@ -78,6 +79,7 @@ body {
     margin-bottom: 40px;
     margin-top: 25px;
 }
+
 .cuerpo .Contenido {
     float: left;
     clear: right;
@@ -95,7 +97,6 @@ body {
     overflow-y: hidden;
 }
 
-
 .Contenido article .img1 {
     background-color: #FF0000;
     width: 120px;
@@ -107,25 +108,23 @@ body {
     margin-right: -156px;
 }
 
-
-
 .Contenido .Titulo .Title.Compt {
     color: #FF0000;
-    font-family: "Optima nova LT Pro Regular";
+    font-family: P5;
     margin-top: 34px;
     margin-right: 1px;
     margin-left: 302px;
     font-size: 40px;
 }
+
 .Contenido .Titulo .Title_Fut {
     color: #000000;
-    font-family: "Optima nova LT Pro Regular";
+    font-family: P5;
     margin-top: 34px;
     margin-right: 1px;
     font-size: 40px;
     padding-left: 0px;
 }
-
 
 .Contenido article img {
     width: 120px;
@@ -136,14 +135,14 @@ body {
     margin-left: 87px;
     margin-right: -98px;
     height: 120px;
-
 }
+
 .cuerpo .Contenido .Futbol {
     clear: left;
     overflow-x: hidden;
     overflow-y: hidden;
     color: #000000;
-    font-family: "Optima nova LT Pro Regular";
+    font-family: P5;
     text-align: center;
     text-transform: capitalize;
     width: 40%;
@@ -156,6 +155,7 @@ body {
     margin-left: 160px;
     margin-bottom: 90px;
 }
+
 .Contenido .Futbol img {
     margin-top: 20px;
     width: 180px;
@@ -163,6 +163,7 @@ body {
     margin-left: 76px;
     margin-right: -38px;
 }
+
 .cuerpo .Contenido .CCL {
     clear: left;
     overflow-x: hidden;
@@ -176,17 +177,19 @@ body {
     border-style: solid;
     border-color: #AD8B52;
 }
+
 .Contenido .CCL img {
     width: 100%;
     height: 100%;
     margin-left: -1px;
 }
+
 .cuerpo .Contenido .UCL {
     clear: left;
     overflow-x: hidden;
     overflow-y: hidden;
     color: #000000;
-    font-family: "Optima nova LT Pro Regular";
+    font-family: P5;
     text-align: center;
     text-transform: capitalize;
     width: 40%;
@@ -198,6 +201,7 @@ body {
     margin-left: 160px;
     margin-bottom: 90px;
 }
+
 .Contenido .UCL img {
     width: 100%;
     height: 100%;
@@ -212,7 +216,7 @@ body {
     width: 40%;
     height: 220px;
     color: #000000;
-    font-family: "Optima nova LT Pro Regular";
+    font-family: P5;
     font-size: 72px;
     text-align: center;
     border-radius: 20px;
@@ -220,19 +224,17 @@ body {
     font-style: normal;
     margin-right: 30px;
 }
+
 .Contenido .FPC img {
     width: 100%;
     height: 100%;
     margin-left: -1px;
 }
 
-
 .Contenido .Futbol p {
     margin-top: 70px;
     margin-right: -13px;
 }
-
-
 
 .cuerpo .Contenido .Tenis {
     float: right;
@@ -243,7 +245,7 @@ body {
     height: 220px;
     background-color: #FF0000;
     color: #000000;
-    font-family: "Optima nova LT Pro Regular";
+    font-family: P5;
     font-size: 72px;
     text-align: center;
     border-radius: 20px;
@@ -251,13 +253,15 @@ body {
     font-style: normal;
     margin-right: 30px;
 }
+
 .Contenido .Tenis p {
     color: #000000;
-    font-family: "Optima nova LT Pro Regular";
+    font-family: P5;
     font-size: 72px;
     margin-top: 70px;
     margin-right: -13px;
 }
+
 .Contenido .Tenis img {
     margin-top: 20px;
     width: 180px;
@@ -265,8 +269,6 @@ body {
     margin-left: 76px;
     margin-right: -38px;
 }
-
-
 
 .cuerpo .Contenido .Baloncesto {
     clear: left;
@@ -280,6 +282,7 @@ body {
     margin-top: 0px;
     float: left;
 }
+
 .Contenido .Baloncesto img {
     width: 180px;
     height: 180px;
@@ -290,12 +293,13 @@ body {
 
 .Contenido .Baloncesto p {
     color: #000000;
-    font-family: "Optima nova LT Pro Regular";
+    font-family: P5;
     font-size: 55px;
     text-align: center;
     margin-top: 78px;
     margin-right: -13px;
 }
+
 .cuerpo .Contenido .e-Sports {
     width: 40%;
     height: 220px;
@@ -304,17 +308,19 @@ body {
     background-color: #FF0000;
     margin-right: 30px;
 }
+
 .Contenido .e-Sports p {
     color: #000000;
-    font-family: "Optima nova LT Pro Regular";
+    font-family: P5;
     font-size: 62px;
     text-align: center;
     margin-top: 52px;
     margin-right: -13px;
 }
+
 .Contenido .e-Sports .prox {
     color: #000000;
-    font-family: "Optima nova LT Pro Regular";
+    font-family: P5;
     font-size: 27px;
     text-align: center;
     margin-top: -67px;
@@ -328,15 +334,18 @@ body {
     margin-right: -32px;
 }
 
-
 .cuerpo .piedepagina {
     overflow-x: hidden;
     overflow-y: hidden;
     width: 80%;
     color: #FF0000;
-    font-family: "Optima nova LT Pro Regular";
+    font-family: P5;
     font-size: 12px;
     text-align: right;
     float: right;
+}
 
+@font-face {
+    font-family: P5;
+    src: url('../static/css/optima-nova-lt-black.otf');
 }

@@ -24,3 +24,11 @@ def IniciarSesion(request):
     return render(request, 'IniciarSesion.html')
 def TyC(request):
     return render(request, 'TerminosYCondiciones.html')
+def Baloncesto(request):
+    return render(request, 'Comp_balo.html')
+def Competencias(request):
+    return render(request, 'Competencias.html')
+def Futbol(request):
+    return render(request, 'Compt_Futbol.html')
+def Perfil(request):
+    return render(request, 'perfil-1.html')

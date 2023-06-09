@@ -8,4 +8,8 @@ urlpatterns = [
     path('pago/', views.Pago, name="formulario_de_pago"),
     path('iniciarsesion/', views.IniciarSesion, name="IniciarSesion"),
     path('TyC/', views.TyC, name="TerminosYCondiciones"),
+    path('Baloncesto/', views.Baloncesto, name="Baloncesto"),
+    path('Competencias/', views.Competencias, name="Competencias"),
+    path('Futbol/', views.Futbol, name="Futbol"),
+    path('Perfil/', views.Perfil, name="Perfil"),
 ]
